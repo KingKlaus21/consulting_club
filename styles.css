@@ -1,0 +1,85 @@
+body {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4;
+}
+
+/* Header container */
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #333;
+    color: white;
+    padding: 20px 40px; /* Larger padding for a bigger header */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Logo styles */
+.logo img {
+    height: 60px; /* Larger logo size */
+    max-width: 100%;
+}
+
+/* Navigation menu */
+nav ul {
+    display: flex;
+    align-items: center;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    flex-grow: 1; /* Push links to the left */
+}
+
+nav ul li {
+    margin-right: 20px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px; /* Larger font for navigation links */
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #1da1f2; /* Subtle hover effect */
+}
+
+/* Social media icons */
+.social-media {
+    display: flex;
+    align-items: center;
+}
+
+.social-media a {
+    margin-left: 15px;
+    color: white;
+    font-size: 22px; /* Slightly larger icons */
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.social-media a:hover {
+    color: #1da1f2; /* Highlight hover effect */
+}
+
+/* Mobile responsiveness */
+@media (max-width: 768px) {
+    header {
+        flex-wrap: wrap;
+        text-align: center;
+    }
+
+    nav ul {
+        justify-content: center;
+        flex-grow: unset;
+        margin-top: 10px;
+    }
+
+    .social-media {
+        justify-content: center;
+        margin-top: 10px;
+    }
+}
