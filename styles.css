@@ -106,3 +106,85 @@ nav ul li a:hover {
         font-size: 1em;
     }
 }
+
+.checkerboard-container {
+    display: flex;
+    flex-direction: column;
+    margin-top: 50px;
+}
+
+/* Styling for each row of the checkerboard pattern */
+.checkerboard-row {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 60vh; /* Each row takes up 50% of the viewport height */
+}
+
+/* Left side (text) styling */
+.text-box {
+    width: 50%; /* 50% of the viewport width */
+    background-color: #f4f4f4;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.text-box h2 {
+    font-size: 2em;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.text-box p {
+    font-size: 1.1em;
+    color: #666;
+    margin-bottom: 15px;
+}
+
+.text-box a {
+    font-size: 1.1em;
+    color: #1da1f2;
+    text-decoration: none;
+}
+
+/* Right side (image) styling */
+.image-box {
+    width: 50%; /* 50% of the viewport width */
+    background-color: #ddd;
+}
+
+.image-box img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .checkerboard-row {
+        flex-direction: column;
+        height: auto;
+    }
+
+    .text-box, .image-box {
+        width: 100%;
+        height: auto;
+    }
+
+    .text-box h2 {
+        font-size: 1.5em;
+        text-align: center;
+    }
+
+    .text-box p {
+        font-size: 1.1em;
+        text-align: center;
+    }
+
+    .text-box a {
+        text-align: center;
+        display: block;
+    }
+}
