@@ -107,6 +107,67 @@ nav ul li a:hover {
     }
 }
 
+/* Who we are */
+
+.who-section {
+    display: flex;
+    flex-direction: column;
+    padding: 2em 3em;
+}
+
+.who-bottom {
+    display: flex;
+}
+
+.who-top > *,
+.who-bottom > * > h3 {
+    text-align: center;
+}
+
+.who-clients,
+.who-members {
+    /* padding: 1em 0.5em; */
+    /* padding: 10px 30px; */
+    padding: 1em 1em;
+}
+
+.who-circles {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0em 4em;
+    text-align: center;
+    /* flex: 0 0 auto; */
+    /* flex-wrap: wrap;
+    gap: 30px 30px; */
+}
+
+.circle-group {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-evenly;
+    flex: auto;
+}
+
+.circle-group > * {
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+    border-color: black;
+    border-style: solid;
+    display: inline-block;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    /* flex: 0 0 auto; */
+    /* flex-wrap: wrap; */
+}
+
+/* Checkerboard */
+
 .checkerboard-container {
     display: flex;
     flex-direction: column;
