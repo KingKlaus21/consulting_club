@@ -136,38 +136,35 @@ nav ul li a:hover {
 }
 
 .who-circles {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    padding: 0em 4em;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    justify-items: center;
+    padding: 20px;
     text-align: center;
-    /* flex: 0 0 auto; */
-    /* flex-wrap: wrap;
-    gap: 30px 30px; */
 }
 
-.circle-group {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-    justify-content: space-evenly;
-    flex: auto;
-}
-
-.circle-group > * {
+.circle {
     height: 150px;
     width: 150px;
     border-radius: 50%;
-    border-color: black;
-    border-style: solid;
-    display: inline-block;
+    border: 2px solid black;
     display: flex;
     align-items: center;
+    justify-content: center;
     flex-direction: column;
-    /* flex: 0 0 auto; */
-    /* flex-wrap: wrap; */
+}
+
+@media (max-width: 1200px) {
+    .who-circles {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 600px) {
+    .who-circles {
+        grid-template-columns: 1fr;
+    }
 }
 
 /* Checkerboard */
@@ -193,7 +190,8 @@ nav ul li a:hover {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
+    align-items: center; 
+    /* this made it left dor description + learn more */
 }
 
 .text-box h2 {
