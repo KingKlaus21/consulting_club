@@ -74,14 +74,14 @@ nav ul li a:hover {
     display: flex;
     align-items: center;
     justify-content: center;
-    color: white;
     text-align: center;
     padding: 20px;
 }
 
 .background-section h1 {
-    font-size: 3em;
-    margin: 0;
+    font-size: 110pt;
+    color: white;
+    margin: 0px;
 }
 
 .background-section p {
@@ -117,6 +117,11 @@ nav ul li a:hover {
     display: flex;
     flex-direction: column;
     padding: 2em 3em;
+}
+
+.who-section-line {
+    border: solid rgb(224, 219, 219) 1px;
+    margin-top: 80px;
 }
 
 .who-bottom {
@@ -312,4 +317,24 @@ nav ul li a:hover {
     to {
         transform: translateX(-100%);
     }
+}
+
+/* Who Long Container Variant */
+
+.who-section-long {
+    display: flex;
+    flex-direction: row;
+    padding: 20px 100px;
+}
+
+.who-left-long h2 {
+    color: red;
+    text-align: left;
+}
+
+/* Three photo section */
+
+.three-photo-section {
+    display: flex;
+    flex-direction: row;
 }
