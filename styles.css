@@ -8,6 +8,12 @@ body {
     font-family: 'Arial', sans-serif;
 }
 
+h1 {
+    font-size: 70pt;
+    color: white;
+    margin: 0px;
+}
+
 h2 {
     text-align: center;
 }
@@ -81,18 +87,15 @@ nav ul li a:hover {
     justify-content: center;
     text-align: center;
     padding: 20px;
+    flex-direction: column;
 }
 
-.background-section h1 {
-    font-size: 90pt;
+.background-section h2 {
+    font-size: 30pt;
     color: white;
-    margin: 0px;
-}
-
-.background-section p {
-    font-size: 1.5em;
+    font-style: italic;
     margin-top: 10px;
-    max-width: 600px;
+
 }
 
 /* Mobile Responsiveness */
@@ -111,7 +114,7 @@ nav ul li a:hover {
         font-size: 2em;
     }
 
-    .background-section p {
+    .background-section h2 {
         font-size: 1em;
     }
 }
@@ -124,7 +127,7 @@ nav ul li a:hover {
     padding: 2em 3em;
 }
 
-.who-section-line {
+.end-section-line {
     border: solid rgb(224, 219, 219) 1px;
     margin-top: 80px;
 }
@@ -276,12 +279,22 @@ nav ul li a:hover {
 
 /* Expertise Scroller */
 
+.expertise-introduction {
+    margin: 50px 0px;
+    padding: 0px 350px;
+}
+
+.expertise-introduction > * {
+    text-align: center;
+    text-wrap: wrap;
+}
+
 .expertise-container {
     position: relative;
     width: 100%;
-    height: 300px;
+    height: 250px;
     background-color: #222;
-    color: white;
+    color: black;
     overflow: hidden;
     overflow-x: hidden;
     display: flex;
@@ -291,8 +304,18 @@ nav ul li a:hover {
 .expertise-text {
     position: absolute;
     white-space: nowrap;
-    animation: scroll 30s linear infinite; /* control speed */
-    font-size: 200px;
+    animation: scroll 90s linear infinite; /* control speed */
+    font-size: 50px;
+}
+
+.expertise-text > span {
+    padding: 90px;
+    margin: 0px 10px;
+    /* 100px worked pretty good alone*/
+    background-color: white;
+    border: 1px solid;
+    border-radius: 16px;
+    font-weight: bold;
 }
 
 .expertise-container::before,
@@ -339,10 +362,33 @@ nav ul li a:hover {
 
 /* Three photo section */
 
-.three-photo-section {
+.about-content-container {
     display: flex;
     flex-direction: row;
+    margin: 20px 100px;
+    gap: 20px 30px;
+    padding-bottom: 80px;
+    border-bottom: 1px solid rgb(224, 219, 219);
 }
+
+.about-content-section {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    border: 2px solid white;
+    border-radius: 16px;
+    /* justify-content: center;
+    align-items: center; */
+    padding: 6px 20px;
+    box-shadow: 0 4px 8px rgba(10, 10, 10, 0.5);
+}
+
+.about-content-section > h2 {
+    font-size: 30pt;
+    color: rgb(193, 0, 0);
+}
+
+
 
 /* Timeline Section */
 
@@ -379,7 +425,7 @@ nav ul li a:hover {
 .timeline-section-circle {
     width: 40px;
     height: 40px;
-    border: 2px solid rgb(193, 1, 1);
+    border: 2px solid rgb(193, 0, 0);
     border-radius: 50%;
     background-color: rgb(193, 0, 0);
     color: white;
