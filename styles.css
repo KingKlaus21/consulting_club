@@ -500,6 +500,31 @@ nav ul li a:hover {
 
 .join-text-box a {
     font-size: 20pt;
-    color: #1da1f2;
     text-decoration: none;
+    color: white;
+}
+
+/* .join-text-box button {
+    margin-top: 60px;
+    font-size: 16pt;
+    color: rgb(193, 0, 0);
+} */
+
+.register-button {
+    background: rgb(193, 0, 0); /* Deep Blue */
+    color: white;
+    font-weight: bold;
+    padding: 24px 160px;
+    border-radius: 12px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease-in-out;
+    border: none;
+    cursor: pointer;
+    font-size: 20pt;
+    margin-top: 30px;
+}
+
+.register-button:hover {
+    background: rgb(213, 2, 2); /* Slightly Brighter Blue */
+    transform: scale(1.05);
 }
