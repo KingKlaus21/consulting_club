@@ -2,6 +2,7 @@
     line-height: 1.5;
     /* font-family: 'Times New Roman', Times, serif; */
     font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    line-height: 1.3;
 }
 
 body {
@@ -28,6 +29,12 @@ header {
     color: white;
     padding: 20px 40px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+@media (max-width: 390px) { /* Adjust the breakpoint as needed */
+    header {
+        padding: 20px 0px;
+    }
 }
 
 .logo img {
@@ -208,7 +215,7 @@ nav ul li a:hover {
 .text-box {
     line-height: 1.5;
     box-sizing: border-box;
-    padding: 80px 100px 60px 220px;
+    padding: 80px 100px 60px 180px;
     width: 50%; /* 50% of the viewport width */
     background-color: #f4f4f4;
     display: flex;
@@ -221,7 +228,7 @@ nav ul li a:hover {
 }
 
 #special-text-box {
-    padding: 80px 220px 60px 100px;
+    padding: 80px 180px 60px 100px;
 }
 
 .text-box h2 {
@@ -236,6 +243,7 @@ nav ul li a:hover {
     font-size: 26pt;
     color: #666;
     margin-bottom: 15px;
+    margin-top: 0px;
 }
 
 .text-box a {
@@ -283,6 +291,48 @@ nav ul li a:hover {
         text-align: center;
         display: block;
     }
+
+} */
+
+@media (max-width: 1370px) {
+    .text-box, #special-text-box {
+        padding-left: 30px;
+        padding-right: 10px;
+    }
+}
+
+@media (max-width: 1050px) {
+    .text-box h2 {
+        font-size: 40pt;
+    }
+
+    .text-box p {
+        font-size: 20pt;
+    }
+}
+
+@media (max-width: 750px) {
+    .text-box h2 {
+        font-size: 24pt;
+    }
+}
+
+@media (max-width: 470px) {
+    .text-box, #special-text-box {
+        padding-left: 10px;
+    }
+
+    .text-box h2 {
+        font-size: 16pt;
+    }
+
+    .text-box p {
+        font-size: 16pt;
+    }
+}
+
+/* @media (max-width: 520px) {
+
 } */
 
 /* Expertise Scroller */
@@ -414,7 +464,9 @@ nav ul li a:hover {
     /* border-bottom: solid rgb(224, 219, 219) 1px; */
 }
 
-@media (max-width: 768px) { /* Adjust the breakpoint as needed */
+/* 768 */
+
+@media (max-width: 1140px) { /* Adjust the breakpoint as needed */
     .timeline {
         grid-template-columns: 1fr;
         padding: 20px 50px;
@@ -543,4 +595,34 @@ nav ul li a:hover {
 .register-button:hover {
     background: rgb(213, 2, 2); /* Slightly Brighter Blue */
     transform: scale(1.05);
+}
+
+@media (max-width: 470px) { /* Adjust the breakpoint as needed */
+    .join-text-box h2 {
+        font-size: 40pt;
+    }
+
+    .register-button {
+        padding: 12px 80px;
+    }
+}
+
+/* footer */
+
+footer {
+    background-color: #222;
+    height: 100px;
+    padding-top: 40px;
+}
+
+.simple-footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.simple-footer p {
+    margin: 0px;
+    text-align: center;
+    color: white;
 }
