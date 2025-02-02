@@ -79,7 +79,7 @@ nav ul li a:hover {
 /* Full-Screen Background Section */
 .background-section {
     height: calc(100vh - 80px); /* Subtract header height */
-    background-image: url('./images/warren-hall.jpg'); /* Replace with your image */
+    background-image: url('./images/blurred-warren-hall.png'); /* Replace with your image */
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -89,6 +89,8 @@ nav ul li a:hover {
     text-align: center;
     padding: 20px;
     flex-direction: column;
+    /* filter: blur(8px);
+    -webkit-filter: blur(8px); */
 }
 
 .background-section h2 {
@@ -96,7 +98,6 @@ nav ul li a:hover {
     color: white;
     font-style: italic;
     margin-top: 10px;
-
 }
 
 /* Mobile Responsiveness */
@@ -435,11 +436,14 @@ nav ul li a:hover {
     display: flex;
     align-items: center;
     justify-content: center;
-    font-size: 16pt;
+    font-size: 22pt;
+    font-weight: bold;
 }
 
 .timeline-section-title {
     padding-left: 20px;
+    /* font-size: 40px; */
+    font-size: 2.5em;
 }
 
 .timeline-section-content {
@@ -447,6 +451,8 @@ nav ul li a:hover {
     margin-left: 22px;
     padding-left: 42px;
     height: 250px;
+    font-size: 30px;
+    font-size: 1.8em;
 }
 
 /* join us section */
