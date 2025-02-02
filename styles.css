@@ -98,6 +98,12 @@ nav ul li a:hover {
     color: white;
     font-style: italic;
     margin-top: 10px;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+}
+
+.background-section h1 {
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+
 }
 
 /* Mobile Responsiveness */
