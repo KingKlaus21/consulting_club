@@ -469,7 +469,7 @@ nav ul li a:hover {
 @media (max-width: 1140px) { /* Adjust the breakpoint as needed */
     .timeline {
         grid-template-columns: 1fr;
-        padding: 20px 50px;
+        padding: 10px 50px;
     }
 }
 
